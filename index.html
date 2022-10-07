@@ -35,9 +35,9 @@
 
 <body class="font-nunito">
     <!-- intro section -->
-    <section class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
+    <section class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
         <!-- header start -->
-        <header class="w-full fixed top-0 bg-white">
+        <header class="w-full fixed top-0 bg-white z-10">
             <nav class="container mx-auto py-5 flex items-center  justify-between">
                 <div class="flex items-center gap-2">
                     <img class="w-8" src="./assets/images/logo.png" alt="logo">
@@ -50,7 +50,7 @@
                     <li class="hover:text-gray-500"><a href="#">Work</a></li>
                     <li class="hover:text-gray-500"><a href="#">Contact</a></li>
                 </ul>
-                <img src="./assets/images/moon.png" class=" hidden md:block w-5 cursor-pointer" alt="darkmode">
+                <img src="./assets/images/moon.png" class="hidden md:block w-5 cursor-pointer" alt="darkmode">
                 <!-- mobile menu start -->
                 <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
                     <div class="w-6 h-0.5 bg-black"></div>
@@ -58,19 +58,28 @@
                     <div class="w-6 h-0.5 bg-black"></div>
                 </div>
                 <ul id="menu"
-                class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
-                    <li class=""><a href="#">Home page</a></li>
-                    <li class=""><a href=" #">About me</a></li>
-                    <li class=""><a href="#">Services</a></li>
-                    <li class=""><a href="#">Work</a></li>
-                    <li class=""><a href="#">Contact</a></li>
+                    class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li class="hover:text-black"><a href="#">Home page</a></li>
+                    <li class="hover:text-black"><a href=" #">About me</a></li>
+                    <li class="hover:text-black"><a href="#">Services</a></li>
+                    <li class="hover:text-black"><a href="#">Work</a></li>
+                    <li class="hover:text-black"><a href="#">Contact</a></li>
                 </ul>
                 <!-- mobile menu end -->
             </nav>
         </header>
         <!-- header end -->
+        <!-- main image -->
+        <img class="relative top-16 bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./assets/images/man.png"
+            alt="man">
+        <!-- circle item -->
+        <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
+        <!-- animated text -->
+        <div class="absolute top-1/2 left-8">
+            <span class="text-gray-600">Frelance</span>
+            <p class="text-red-500">Developer</p>
+        </div>
     </section>
-
     <!-- intro section end -->
 
     <!-- main start -->
