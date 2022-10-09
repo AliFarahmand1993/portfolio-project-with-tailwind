@@ -70,8 +70,8 @@
         </header>
         <!-- header end -->
         <!-- main image -->
-        <img class="relative top-16 bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./assets/images/man.png"
-            alt="man">
+        <img class="relative top-16 bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover lg:h-full"
+            src="./assets/images/man.png" alt="man">
         <!-- circle item -->
         <div
             class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10">
@@ -83,25 +83,60 @@
             <p id="text" class="text-red-500"></p>
         </div>
         <!-- text box -->
-        <div class="hidden lg:flex gap-5 rounded-md shadow-lg flex-col absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
+        <div
+            class="hidden lg:flex gap-5 rounded-md shadow-lg flex-col absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
             <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Ali</h1>
             <p class="text-gray-400">with over 2 years of experience on web design and development. Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. N oumquam quo
                 provident, facere minus temporibus veniam nostrum reprehenderit nihil?</p>
-            <a href="#contact" class="bg-indigo-600 text-xl text-white px-3 py-2 rounded-md font-semibold  w-fit hover:text-black bg-indigo-900">Hire me</a>
+            <a href="#contact"
+                class="bg-indigo-600 text-xl text-white px-3 py-2 rounded-md font-semibold  w-fit hover:text-black bg-indigo-900">Hire
+                me</a>
         </div>
     </section>
     <!-- intro section end -->
-
     <!-- main start -->
-    <main></main>
+    <main>
+        <!-- about me section -->
+        <section class="container mx-auto flex flex-col-reverse lg:flex-row items-center py-28 gap-20 px-10 ">
+            <div class="relative">
+                <img src="./assets/images/dots.png" class="h-1/4 absolute top-0 left-0 -z-10" alt="dots">
+                <div class="h-full rounded-full overflow-hidden">
+                    <img src="./assets/images/portrait.png" alt="">
+                </div>
+            </div>
+            <div class="my-auto flex flex-col gap-3">
+                <h5 class="text-indigo-600 font-bold text-2xl">About Me</h5>
+                <h5 class="text-2xl font-medium">Better Design</h5>
+                <h5 class="text-2xl font-medium">Better Experience</h5>
+                <p class="text-gray-400">
+                    I design and build digital products. I'm also a multi-disciplinary
+                    maker with over 10 years of experiences in wide range of design
+                    disciplines.
+                </p>
+                <h6 class="text-gray-400 font-medium">HTML</h6>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h6 class="text-gray-400 font-medium">CSS</h6>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-2/3 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h6 class="text-gray-400 font-medium">JAVASCRIPT</h6>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-1/2 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+            </div>
+        </section>
+        <!-- about me section end -->
+    </main>
     <!-- main end -->
     <!-- footer start -->
     <footer></footer>
     <!-- footer end -->
     <!-- script -->
-    <script src="/app.js"></script>
-    <script src="/autotyping.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/autotyping.js"></script>
 </body>
 <!-- body end -->
 
